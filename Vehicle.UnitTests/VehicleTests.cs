@@ -3,6 +3,7 @@ namespace Vehicle.UnitTests
     public class VehicleTests
     {
         public object Summary { get; private set; }
+        //This is a commet
 
         [Fact]
         public void WhenCreated_HasCorrectProperties()
