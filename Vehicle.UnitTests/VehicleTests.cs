@@ -2,6 +2,8 @@ namespace Vehicle.UnitTests
 {
     public class VehicleTests
     {
+        public object Summary { get; private set; }
+
         [Fact]
         public void WhenCreated_HasCorrectProperties()
         {
@@ -18,11 +20,28 @@ namespace Vehicle.UnitTests
         {
             Vehicle andysBike = new Vehicle(2, "Blue");
 
-            var expected = "This Blue vehicle has 2 wheels and has driven 0 miles";
+            string expected = "This Blue vehicle has 2 wheels and has driven 0 miles";
+            //Console.WriteLine.Add(Summary);
+            Assert.Equal(Summary, expected);
 
 
         }
 
         // Add more tests here!
+        [Fact]
+
+        public void Miles_ThatCarHasBeen_Driven() 
+        
+       {
+        
+        }
+        [Fact]
+
+        public void New_PaintColor()
+        {
+            var Color = new Color();
+            Console.WriteLine(newColor);
+            Assert.Equal(Color, newColor);
+        }
     }
 }
