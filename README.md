@@ -38,20 +38,24 @@ To Edit the README:
     B. `Chair bench = new Chair(24, true);`  
     C. `var bench = new(24, true);`  
     D. `Chair bench = new(24, true);`  
-    
+
+    I believe C is the answer because `var bench = new(24, true);` does NOT specify what var is equal to. It also never calls the instance of Chair.
     
 2. Imagine you are interviewing for your first job.  The interviewer asks "What can you tell me about OOP?".  Write your response below:
-
+"OOP" stands for object orentied Programing. In order to crate an "OOP" in C# I would bulid a class consisting of a constructor, attributes, and behavoirs. 
 
 3. What is Automated Testing?
-
-
+A seprate program that verifys the outcome(s) of the primary program. Automated tests also is heavly dependent on the code the is being written witch in the long run could help save a lot of time.
+ 
 4. What are some benefits of creating tests for our projects?
+Helps pin point exact locations of errors
+Helps save time.
+Verifys what we assume to be true.
 
+6. When you create a test project, you do not immediately have access to the class(es) in the project that you are testing.  What do you need to do in order to have access to those classes?
+You have to search and selcet xUnit Test Project.
 
-5. When you create a test project, you do not immediately have access to the class(es) in the project that you are testing.  What do you need to do in order to have access to those classes?
-
-6. Take a look at the class below.  Write out the **names** of each test you would write to verify that this class is working. You do not need to write the whole test, just what you would **name** the test methods. Ex: `IsCreatedWithTwoArguments()`
+8. Take a look at the class below.  Write out the **names** of each test you would write to verify that this class is working. You do not need to write the whole test, just what you would **name** the test methods. Ex: `IsCreatedWithTwoArguments()`
 ```c#
     public class Vehicle
     {
@@ -60,6 +64,7 @@ To Edit the README:
         public int MilesDriven { get; private set; }
 
         public Vehicle(int numberOfWheels, string color)
+         public void NumOfWheelAndColor()
         {
             NumberOfWheels = numberOfWheels;
             Color = color;
@@ -67,17 +72,20 @@ To Edit the README:
         }
 
         public string Summary()
+         public void SummaryOfDesiredCar()
         {
             string summary = $"This {Color} vehicle has {NumberOfWheels} wheels, and has driven {MilesDriven} miles.";
             return summary;
         }
 
         public void Drive()
+         public void MilesAddedOnCar()
         {
             MilesDriven += 5;
         }
 
         public void Paint(string newColor)
+         public void AddingnewColor()
         {
             Color = newColor;
         }
